@@ -9,6 +9,7 @@ import MainAdmin from './components/MainAdmin';
 import Dashboard from './components/Dashboard';
 import Cusview from './components/Cusview';
 import Choice from './components/Choice';
+import AddEmployee from './components/AddEmployee';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/mainadmin' element={<MainAdmin />} />
         <Route exact path='/dashboard' element={<Dashboard />} />
         <Route exact path='/cusview' element={<Cusview />} />
+        <Route exact path='/addemployee' element={<AddEmployee />} />
       </Routes>
     </Router>
   );
