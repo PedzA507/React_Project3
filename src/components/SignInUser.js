@@ -29,7 +29,7 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function SignIn() {
+export default function SignInUser() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate(); // ใช้ useNavigate สำหรับนำทาง
@@ -51,7 +51,7 @@ export default function SignIn() {
 
       if (result['status'] === true) {
         localStorage.setItem('token', result['token']);
-        navigate('/cusview'); // นำทางไปยังหน้า MainAdmin
+        navigate('/cusview');
       }
 
     } catch (err) {
@@ -64,7 +64,7 @@ export default function SignIn() {
       <Box
         sx={{
           minHeight: '100vh',
-          backgroundImage: `url(${BackgroundImage})`, // ใช้ภาพพื้นหลัง
+          backgroundImage: `url(${BackgroundImage})`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
