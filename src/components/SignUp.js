@@ -55,7 +55,7 @@ export default function SignUp() {
       alert(result['message']);
 
       if (result['status'] === true) {
-        navigate('/signin'); 
+        navigate('/signinuser'); 
       }
 
     } catch (err) {
@@ -159,7 +159,7 @@ export default function SignUp() {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="#" variant="body2" onClick={() => navigate('/signin')}>
+                  <Link href="#" variant="body2" onClick={() => navigate('/signinuser')}>
                     Already have an account? Sign in
                   </Link>
                 </Grid>

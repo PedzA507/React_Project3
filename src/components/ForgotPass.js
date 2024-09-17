@@ -124,7 +124,7 @@ export default function ForgotPass() {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="#" variant="body2" onClick={() => navigate('/signin')}>
+                  <Link href="#" variant="body2" onClick={() => navigate('/choice')}>
                     Remember your password? Sign in
                   </Link>
                 </Grid>
